@@ -44,7 +44,7 @@ flowchart TB
 flowchart TD
   Start([アプリを開く]) --> Restore{保存済みデータはあるか}
   Restore -- はい --> Load[localStorageから復元]
-  Restore -- いいえ --> Initial[初期状態を表示]
+  Restore -- いいえ --> Initial[サンプルデータを表示]
   Load --> Board[ボード画面を表示]
   Initial --> Board
 
@@ -108,7 +108,6 @@ erDiagram
 
 ## 6. 設計上の確認事項
 
-- 初期状態は空のボードとするか、サンプルのリスト・カードを表示するか。
 - 空文字や空白だけのリスト名・カード名を登録できないようにするか。
 - カードを含むリストを削除する際、確認ダイアログを表示するか。
 - localStorageのデータが破損していた場合、初期状態で起動するか。
