@@ -98,13 +98,11 @@ erDiagram
   LIST {
     string id
     string title
-    number position
   }
 
   CARD {
     string id
     string title
-    number position
   }
 ```
 
